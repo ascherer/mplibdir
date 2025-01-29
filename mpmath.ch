@@ -148,7 +148,7 @@ k--}
       }
 @z
 
-@x [47] l.1320ß
+@x [47] l.1320
   if (a <= b) {
     @<Handle erroneous |pyth_sub| and set |a:=0|@>;
   } else {
