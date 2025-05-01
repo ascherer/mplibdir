@@ -117,7 +117,7 @@ static int mpost_run_dvitomp (char *dviname, char *mpxname) {
 @z
 @x [29] l.1021
 "\n"
-"Usage: mpost [OPTION] [&MEMNAME] [MPNAME[.mp]] [COMMANDS]\n"
+"Usage: mpost [OPTION] [&MPNAME] [MPNAME[.mp]] [COMMANDS]\n"
 "       mpost --dvitomp DVINAME[.dvi] [MPXNAME[.mpx]]\n"
 "\n"
 "  Run MetaPost on MPNAME, usually creating MPNAME.NNN (and perhaps\n"
@@ -126,7 +126,7 @@ static int mpost_run_dvitomp (char *dviname, char *mpxname) {
 "  after MPNAME is read.\n\n"
 "  With a --dvitomp argument, MetaPost acts as DVI-to-MPX converter only.\n"
 @y
-"\nUsage: mpost [OPTION] [&MEMNAME] [MPNAME[.mp]] [COMMANDS]\n" @|
+"\nUsage: mpost [OPTION] [&MPNAME] [MPNAME[.mp]] [COMMANDS]\n" @|
 "       mpost --dvitomp DVINAME[.dvi] [MPXNAME[.mpx]]\n\n" @|
 "  Run MetaPost on MPNAME, usually creating MPNAME.NNN (and perhaps\n" @|
 "  MPNAME.tfm), where NNN are the character numbers generated.\n" @|
@@ -135,7 +135,7 @@ static int mpost_run_dvitomp (char *dviname, char *mpxname) {
 "  With a --dvitomp argument, MetaPost acts as DVI-to-MPX converter only.\n" @|
 @z
 @x [29] l.1032
-"  -ini                      be inimpost, for dumping mem files\n"
+"  -ini                      do not load any preload file\n"
 "  -interaction=STRING       set interaction mode (STRING=batchmode/nonstopmode/\n"
 "                            scrollmode/errorstopmode)\n"
 "  -numbersystem=STRING      set number system mode (STRING=scaled/double/binary/interval/decimal)\n"
@@ -143,7 +143,7 @@ static int mpost_run_dvitomp (char *dviname, char *mpxname) {
 "  -progname=STRING          set program (and mem) name to STRING\n"
 "  -tex=TEXPROGRAM           use TEXPROGRAM for text labels\n"
 @y
-"  -ini                      be inimpost, for dumping mem files\n" @|
+"  -ini                      do not load any preload file\n" @|
 "  -interaction=STRING       set interaction mode" @|
 @t\qquad@>" (STRING=batchmode/nonstopmode/\n" @|
 "                            scrollmode/errorstopmode)\n" @|
@@ -157,7 +157,8 @@ static int mpost_run_dvitomp (char *dviname, char *mpxname) {
 "  -debug                    print debugging info and leave temporary files in place\n"
 "  -kpathsea-debug=NUMBER    set path searching debugging flags according to\n"
 "                            the bits of NUMBER\n"
-"  -mem=MEMNAME or &MEMNAME  use MEMNAME instead of program name or a %%& line\n"
+"  -mem=STRING               Use STRING for the name of the file that contains macros\n"
+"                            to be preloaded (same as &MPNAME)\n" 
 "  -recorder                 enable filename recorder\n"
 "  -restricted               be secure: disable tex, makempx and editor commands\n"
 "  -troff                    set prologues:=1 and assume TEXPROGRAM is really troff\n"
@@ -174,7 +175,8 @@ static int mpost_run_dvitomp (char *dviname, char *mpxname) {
 @t\qquad@>" and leave temporary files in place\n" @|
 "  -kpathsea-debug=NUMBER    set path searching debugging flags according to\n" @|
 "                            the bits of NUMBER\n" @|
-"  -mem=MEMNAME or &MEMNAME  use MEMNAME instead of program name or a %%& line\n" @|
+"  -mem=STRING               Use STRING for the name of the file that contains macros\n"
+"                            to be preloaded (same as &MPNAME)\n" @|
 "  -recorder                 enable filename recorder\n" @|
 "  -restricted               be secure: disable tex, makempx and editor commands\n" @|
 "  -troff                    set prologues:=1" @|
