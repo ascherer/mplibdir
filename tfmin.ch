@@ -23,17 +23,17 @@
 @z
 
 @x [6] l.110
-@<Read the \.{TFM} size fields@>;
-@<Use the size fields to allocate space in |font_info|@>;
-@<Read the \.{TFM} header@>;
+@<Read the \.{TFM} size fields@>
+@<Use the size fields to allocate space in |font_info|@>
+@<Read the \.{TFM} header@>
 @<Read the character data and the width, height, and depth tables and
   |goto done|@>
 @y
-@<Read the \9{t}\.{TFM} size fields@>;
-@<Use the size fields to allocate space in |font_info|@>;
-@<Read the \9{t}\.{TFM} header@>;
+@<Read the \9{t}\.{TFM} size fields@>
+@<Use the size fields to allocate space in |font_info|@>
+@<Read the \9{t}\.{TFM} header@>
 @<Read the \9{c}character data and the width, height, and depth tables and
-  |goto done|@>;
+  |goto done|@>
 @z
 
 @x [7] l.118
