@@ -65,16 +65,54 @@
 /*|
 #include <mpfr.h>| */               /* for |MPFR_VERSION_STRING|, |mpfr_get_version()| */
 #include "mplib.h"
+#include "mplibps.h"            /* external header */
+/*|
+#include "mplibsvg.h"| */          /* external header */
+/*|
+#include "mplibpng.h"| */          /* external header */
+#include "mpmp.h"               /* internal header */
+#include "mppsout.h"            /* internal header */
+/*|
+#include "mpsvgout.h"| */           /* internal header */
+/*|
+#include "mppngout.h"| */           /* internal header */
+#include "mpmath.h"             /* internal header */
+#include "mpmathdouble.h"       /* internal header */
+#include "mpmathdecimal.h"      /* internal header */
+/*|
+#include "mpmathbinary.h"| */       /* internal header */
+/*|
+#include "mpmathinterval.h"| */       /* internal header */
+#include "mpstrings.h"          /* internal header */
 @y
-#include <png.h>                /* for |PNG_LIBPNG_VER_STRING|, |png_libpng_ver| */
+#include <png.h>                /* for |PNG_LIBPNG_VER_STRING|, |png_libpng_ver| */ @t@>
 /*|
-#include <pixman.h>| */             /* for |PIXMAN_VERSION_STRING|, |pixman_version_string()| */
+#include <pixman.h>| */             /* for |PIXMAN_VERSION_STRING|, |pixman_version_string()| */ @t@>
 /*|
-#include <cairo.h>| */              /* for |CAIRO_VERSION_STRING|, |cairo_version_string()| */
+#include <cairo.h>| */              /* for |CAIRO_VERSION_STRING|, |cairo_version_string()| */ @t@>
 /*|
-#include <gmp.h>| */                /* for |gmp_version| */
+#include <gmp.h>| */                /* for |gmp_version| */ @t@>
 /*|
-#include <mpfr.h>| */               /* for |MPFR_VERSION_STRING|, |mpfr_get_version()| */
+#include <mpfr.h>| */               /* for |MPFR_VERSION_STRING|, |mpfr_get_version()| */ @t@>
+#include "mplibps.h"            /* external header */ @t@>
+/*|
+#include "mplibsvg.h"| */          /* external header */ @t@>
+/*|
+#include "mplibpng.h"| */          /* external header */
+#include "mpmp.h"               /* internal header */
+#include "mppsout.h"            /* internal header */ @t@>
+/*|
+#include "mpsvgout.h"| */           /* internal header */ @t@>
+/*|
+#include "mppngout.h"| */           /* internal header */
+#include "mpmath.h"             /* internal header */
+#include "mpmathdouble.h"       /* internal header */
+#include "mpmathdecimal.h"      /* internal header */ @t@>
+/*|
+#include "mpmathbinary.h"| */       /* internal header */ @t@>
+/*|
+#include "mpmathinterval.h"| */       /* internal header */
+#include "mpstrings.h"          /* internal header */ @t@>
 @z
 
 @x [1.8] l.284
