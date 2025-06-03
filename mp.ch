@@ -93,7 +93,7 @@
 /*|
 #include <gmp.h>| */                /* for |gmp_version| */ @t@>
 /*|
-#include <mpfr.h>| */               /* for |MPFR_VERSION_STRING|, |mpfr_get_version()| */ @t@>
+#include <mpfr.h>| */               /* for |MPFR_VERSION_STRING|, |mpfr_get_version()| */
 #include "mplibps.h"            /* external header */ @t@>
 /*|
 #include "mplibsvg.h"| */          /* external header */ @t@>
@@ -115,9 +115,42 @@
 #include "mpstrings.h"          /* internal header */ @t@>
 @z
 
+@x [1.8] l.265
+until the c99 standard (and that is too new for us). Lets' hope that at least
+@y
+until the c99 standard (and that is too new for us). Let's hope that at least
+@z
+
+@x [1.8] l.270
+#if MPOST_DEBUG
+/* This function occasionally crashes (if something is written after the */
+/* log file is already closed), but that is not so important while debugging. */
+
+extern void do_debug_printf(MP mp, const char *prefix, const char *fmt, ...);
+
+#endif
+
+@y
+@z
+
 @x [1.8] l.284
 /*void do_debug_printf(MP mp, const char *prefix, const char *fmt, ...);*/
 @y
+static void do_debug_printf(MP mp, const char *prefix, const char *fmt, ...);
+@z
+
+@x [1.9] l.300
+@ This function occasionally crashes (if something is written after the */
+log file is already closed), but that is not so important while debugging. */
+
+@c
+#if MPOST_DEBUG
+@y
+@ This function occasionally crashes (if something is written after the
+log file is already closed), but that is not so important while debugging.
+
+@c
+#if MPOST_DEBUG > 1
 @z
 
 @x [1.17] l.422
