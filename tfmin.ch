@@ -1,4 +1,5 @@
 @x [0] l.28
+\def\title{Reading TEX metrics files}
 \pdfoutput=1
 @y
 
@@ -13,7 +14,7 @@
 @x [1] l.30
 @ Introduction.
 @y
-@* The {\tt TFMIN} program.
+@* Reading \TEX/ metrics files.
 @z
 
 @x [2] l.48
