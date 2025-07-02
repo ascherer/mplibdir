@@ -13,7 +13,7 @@
 @x [1] l.30
 @ Introduction.
 @y
-@* Introduction.
+@* The {\tt TFMIN} program.
 @z
 
 @x [2] l.48
@@ -29,11 +29,11 @@
 @<Read the character data and the width, height, and depth tables and
   |goto done|@>
 @y
-@<Read the \9{t}\.{TFM} size fields@>
-@<Use the size fields to allocate space in |font_info|@>
-@<Read the \9{t}\.{TFM} header@>
+@<Read the \9{t}\.{TFM} size fields@>@;
+@<Use the size fields to allocate space in |font_info|@>@;
+@<Read the \9{t}\.{TFM} header@>@;
 @<Read the \9{c}character data and the width, height, and depth tables and
-  |goto done|@>
+  |goto done|@>@;
 @z
 
 @x [7] l.118
