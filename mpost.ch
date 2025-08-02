@@ -102,20 +102,20 @@ static int mpost_run_dvitomp (char *dviname, char *mpxname) {
 @<Read and set \9{c}command line options@>=
 @z
 
-@x [28] l.983
+@x [28] l.984
 @
 @<Read and set \.{dvitomp} command line options@>=
 @y
 @ @<Read and set \9{d}\.{dvitomp} command line options@>=
 @z
 
-@x [29] l.1011
+@x [29] l.1012
 @
 @<Show help...@>=
 @y
 @ @<Show help...@>=
 @z
-@x [29] l.1021
+@x [29] l.1022
 "\n"
 "Usage: mpost [OPTION] [&MPNAME] [MPNAME[.mp]] [COMMANDS]\n"
 "       mpost --dvitomp DVINAME[.dvi] [MPXNAME[.mpx]]\n"
@@ -134,68 +134,88 @@ static int mpost_run_dvitomp (char *dviname, char *mpxname) {
 "  after MPNAME is read.\n\n" @|
 "  With a --dvitomp argument, MetaPost acts as DVI-to-MPX converter only.\n" @|
 @z
-@x [29] l.1032
+@x [29] l.1033
+"MetaPost options:\n"
+"  -debug                    print debugging info and leave temporary files\n"
+"                            in place\n"
+"  -mem=STRING               Use STRING for the name of the file that contains\n"
+"                            macros to be preloaded (same as &MPNAME)\n"
+"  -numbersystem=STRING      set number system mode\n"
+"                            (STRING=scaled/double/binary/interval/decimal)\n"
+"  -restricted               be secure: disable tex, makempx and editor commands\n"
+"  -tex=TEXPROGRAM           use TEXPROGRAM for text labels\n"
+"  -troff                    set prologues:=1 and assume TEXPROGRAM is\n"
+"                            really troff\n"
+"  -T                        same as -troff\n"
+"  -s INTERNAL=\"STRING\"      set internal INTERNAL to the string value STRING\n"
+@y
+"MetaPost options:\n" @|
+"  -debug                    print debugging info and leave temporary files\n" @|
+"                            in place\n" @|
+"  -mem=STRING               Use STRING for the name of the file that contains\n" @|
+"                            macros to be preloaded (same as &MPNAME)\n"  @|
+"  -numbersystem=STRING      set number system mode\n" @|
+"                            (STRING=scaled/double/binary/interval/decimal)\n" @|
+"  -restricted               be secure: disable tex, makempx and editor commands\n" @|
+"  -tex=TEXPROGRAM           use TEXPROGRAM for text labels\n" @|
+"  -troff                    set prologues:=1 and assume TEXPROGRAM is\n" @|
+"                            really troff\n" @|
+"  -T                        same as -troff\n" @|
+"  -s INTERNAL=\"STRING\"      set internal INTERNAL to the string value STRING\n" @|
+@z
+@x [29] l.1049
+"\n"
+"Common options:\n"
+"  [-no]-file-line-error     disable/enable file:line:error style messages\n"
+"  -halt-on-error            stop processing at the first error\n"
+"  -help                     display this help and exit\n"
 "  -ini                      do not load any preload file\n"
 "  -interaction=STRING       set interaction mode (STRING=batchmode/nonstopmode/\n"
 "                            scrollmode/errorstopmode)\n"
-"  -numbersystem=STRING      set number system mode (STRING=scaled/double/binary/interval/decimal)\n"
 "  -jobname=STRING           set the job name to STRING\n"
-"  -progname=STRING          set program (and mem) name to STRING\n"
-"  -tex=TEXPROGRAM           use TEXPROGRAM for text labels\n"
-@y
-"  -ini                      do not load any preload file\n" @|
-"  -interaction=STRING       set interaction mode" @|
-@t\qquad@>" (STRING=batchmode/nonstopmode/\n" @|
-"                            scrollmode/errorstopmode)\n" @|
-"  -numbersystem=STRING      set number system mode" @|
-@t\qquad@>" (STRING=scaled/double/binary/interval/decimal)\n" @|
-"  -jobname=STRING           set the job name to STRING\n" @|
-"  -progname=STRING          set program (and mem) name to STRING\n" @|
-"  -tex=TEXPROGRAM           use TEXPROGRAM for text labels\n" @|
-@z
-@x [29] l.1042
-"  -debug                    print debugging info and leave temporary files in place\n"
 "  -kpathsea-debug=NUMBER    set path searching debugging flags according to\n"
 "                            the bits of NUMBER\n"
-"  -mem=STRING               Use STRING for the name of the file that contains macros\n"
-"                            to be preloaded (same as &MPNAME)\n" 
+"  -no-kpathsea              Do not use the kpathsea program to find files.\n"
+"                            All files have to be in the current directory\n"
+"                            or specified via a full path.\n"
+"  -output-directory=DIR     use existing DIR as the directory\n"
+"                            to write files in\n"
+"  -progname=STRING          set program (and mem) name to STRING\n"
 "  -recorder                 enable filename recorder\n"
-"  -restricted               be secure: disable tex, makempx and editor commands\n"
-"  -troff                    set prologues:=1 and assume TEXPROGRAM is really troff\n"
-"  -T                        same as -troff\n"
-"  -s INTERNAL=\"STRING\"      set internal INTERNAL to the string value STRING\n"
-"  -s INTERNAL=NUMBER        set internal INTERNAL to the integer value NUMBER\n"
-"  -help                     display this help and exit\n"
-"  -version                  output version information and exit\n"
+@y
+"\nCommon options:\n" @|
+"  [-no]-file-line-error     disable/enable file:line:error style messages\n" @|
+"  -halt-on-error            stop processing at the first error\n" @|
+"  -help                     display this help and exit\n" @|
+"  -ini                      do not load any preload file\n" @|
+"  -interaction=STRING       set interaction mode (STRING=batchmode/nonstopmode/\n" @|
+"                            scrollmode/errorstopmode)\n" @|
+"  -jobname=STRING           set the job name to STRING\n" @|
+"  -kpathsea-debug=NUMBER    set path searching debugging flags according to\n" @|
+"                            the bits of NUMBER\n" @|
+"  -no-kpathsea              Do not use the kpathsea program to find files.\n" @|
+"                            All files have to be in the current directory\n" @|
+"                            or specified via a full path.\n" @|
+"  -output-directory=DIR     use existing DIR as the directory\n" @|
+"                            to write files in\n" @|
+"  -progname=STRING          set program (and mem) name to STRING\n" @|
+"  -recorder                 enable filename recorder\n" @|
+@z
+@x [29] l.1070
 "\n"
 "Email bug reports to mp-implementors@@tug.org.\n"
 "\n");
 @y
-"  -debug                    print debugging info" @|
-@t\qquad@>" and leave temporary files in place\n" @|
-"  -kpathsea-debug=NUMBER    set path searching debugging flags according to\n" @|
-"                            the bits of NUMBER\n" @|
-"  -mem=STRING               Use STRING for the name of the file that contains macros\n"
-"                            to be preloaded (same as &MPNAME)\n" @|
-"  -recorder                 enable filename recorder\n" @|
-"  -restricted               be secure: disable tex, makempx and editor commands\n" @|
-"  -troff                    set prologues:=1" @|
-@t\qquad@>" and assume TEXPROGRAM is really troff\n" @|
-"  -T                        same as -troff\n" @|
-"  -s INTERNAL=\"STRING\"      set internal INTERNAL to the string value STRING\n" @|
-"  -s INTERNAL=NUMBER        set internal INTERNAL to the integer value NUMBER\n" @|
-"  -help                     display this help and exit\n" @|
-"  -version                  output version information and exit\n\n" @|
-"Email bug reports to mp-implementors@@tug.org.\n\n");
+"\nEmail bug reports to mp-implementors@@tug.org.\n\n");
 @z
 
-@x [30] l.1060
+@x [30] l.1076
 @
 @<Show short help...@>=
 @y
 @ @<Show short help...@>=
 @z
-@x [30] l.1070
+@x [30] l.1086
 "\n"
 "Usage: dvitomp DVINAME[.dvi] [MPXNAME[.mpx]]\n"
 "       mpost --dvitomp DVINAME[.dvi] [MPXNAME[.mpx]]\n"
@@ -204,7 +224,7 @@ static int mpost_run_dvitomp (char *dviname, char *mpxname) {
 "\nUsage: dvitomp DVINAME[.dvi] [MPXNAME[.mpx]]\n" @|
 "       mpost --dvitomp DVINAME[.dvi] [MPXNAME[.mpx]]\n\n" @|
 @z
-@x [30] l.1076
+@x [30] l.1092
 "  -progname=STRING          set program name to STRING\n"
 "  -kpathsea-debug=NUMBER    set path searching debugging flags according to\n"
 "                            the bits of NUMBER\n"
@@ -222,13 +242,13 @@ static int mpost_run_dvitomp (char *dviname, char *mpxname) {
 "Email bug reports to mp-implementors@@tug.org.\n\n");
 @z
 
-@x [31] l.1087
+@x [31] l.1103
 @
 @<Show version...@>=
 @y
 @ @<Show version...@>=
 @z
-@x [31] l.1096
+@x [31] l.1112
 "The MetaPost source code in the public domain.\n"
 "MetaPost also uses code available under the\n"
 "GNU Lesser General Public License (version 3 or later);\n"
@@ -250,13 +270,13 @@ static int mpost_run_dvitomp (char *dviname, char *mpxname) {
 "Author of the CWEB MetaPost: Taco Hoekwater.\n" @|
 @z
 
-@x [38] l.1427
+@x [38] l.1443
     @<Read and set \.{dvitomp} command line options@>;
 @y
     @<Read and set \9{d}\.{dvitomp} command line options@>;
 @z
 
-@x [38] l.1429
+@x [38] l.1445
     @<Read and set command line options@>;
 @y
     @<Read and set \9{c}command line options@>;
