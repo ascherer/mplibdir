@@ -50,6 +50,22 @@
  const char *nam,
 @z
 
+@x [10] l.347
+@d TROFF   "soelim | eqn -Tps -d$$ | troff -Tps"
+@y
+@d TROFF   "soelim | eqn -Tps -d$$ | troff -Tps"
+@#
+@d mstat s@&t@&a@&t /* this is a \.{CWEB} coding trick: */
+@f mstat int /* `\&{mstat}' will be equivalent to `\&{struct stat}' */
+@f stat x /* but function `|stat|' will not be treated as a reserved word */
+@z
+
+@x [10] l.388
+        struct stat source_stat, target_stat;
+@y
+        struct mstat source_stat, target_stat;
+@z
+
 @x [10] l.476
 static int mpost_run_dvitomp (char *dviname, char *mpxname) {
 @y
@@ -76,6 +92,12 @@ static int mpost_run_dvitomp (char *dviname, char *mpxname) {
 @y
 #else
 @+@t}\6{@>
+@z
+
+@x [15] l.625
+          struct stat source_stat, target_stat;
+@y
+          struct mstat source_stat, target_stat;
 @z
 
 @x [16] l.693
