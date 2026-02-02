@@ -49,6 +49,25 @@
   \readindex}
 @z
 
+@x [1.4] l.111
+wholesale.
+@y
+wholesale.
+@s integer64 int
+@s mpinteger64 int
+@s QUARTERWORD int
+@s quarterword int
+@s halfword int
+@z
+
+@x [1.4] l.132
+/* integer64 should be alredy defined in source/texk/web2c/w2c/config.h */
+/* but just in case */
+@y
+/* integer64 should be alredy defined in source/texk/web2c/w2c/config.h
+but just in case */
+@z
+
 @x [1.5] l.157
 /*\#define MPOST_DEBUG_ENVELOPE */
 @y
@@ -177,12 +196,26 @@ log file is already closed), but that is not so important while debugging.
 @<Set \9{i}initial ...@>=
 @z
 
+@x [3.45] l.974
+the fopen mode is passed along for the same reason.
+@y
+the fopen mode is passed along for the same reason.
+@s eight_bits int
+@z
+
 @x [3.70] l.1282
 returns |false| and sets |last:=first|.  In general, the |ASCII_code|
 @y
 returns |false| and sets |last=first|.  In general, the |ASCII_code|
 @z
 
+@x [6.121] l.2103
+@s mp_sym int
+@y
+@s mp_sym int
+@s uint16_t int
+@s uint32_t int
+@z
 @x [6.121] l.2108
   //uint32_t s1;
 @y
@@ -895,10 +928,22 @@ length of line~1. If $l+k>h$, some cropping is necessary, so we set |n=h|
 @ @<Set \9{i}init...@>=
 @z
 
+@x [39.992] l.27297
+@<Declare binary action procedures@>
+@y
+@<Declare binary action procedures@>@;
+@z
+
 @x [39.992] l.27428
       mp_add_or_subtract (mp, p, NULL, mp_minus);      /* |cur_exp:=(p)-cur_exp| */
 @y
       mp_add_or_subtract (mp, p, NULL, mp_minus);      /* |cur_exp=(p)-cur_exp| */
+@z
+
+@x [39.995] l.28017
+@<Declare the procedure called |dep_finish|@>
+@y
+@<Declare the procedure called |dep_finish|@>@;
 @z
 
 @x [39.1013] l.28727
@@ -927,6 +972,12 @@ length of line~1. If $l+k>h$, some cropping is necessary, so we set |n=h|
 @<Transform |mp_pen_p(qq)|, making sure...@>=
 @y
 @<Transform \9{m}|mp_pen_p(qq)|, making sure...@>=
+@z
+
+@x [39.1023] l.28938
+@<Declare subroutines needed by |big_trans|@>
+@y
+@<Declare subroutines needed by |big_trans|@>@;
 @z
 
 @x [39.1023] l.28945
@@ -1095,8 +1146,10 @@ by changing values if necessary. It also sets |indep_value(p)=k| if |value(p)|
 
 @x [46.1283] l.35514
 @<Declare the basic parsing subroutines@>
+@<Declare miscellaneous procedures that were declared |forward|@>
 @y
-@<Declare the \9{b}basic parsing subroutines@>
+@<Declare the \9{b}basic parsing subroutines@>@;
+@<Declare miscellaneous procedures that were declared |forward|@>@;
 @z
 
 @x [46.1284] l.35523
