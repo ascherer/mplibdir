@@ -172,9 +172,11 @@ log file is already closed), but that is not so important while debugging.
 #if MPOST_DEBUG > 1
 @z
 
-@x [1.17] l.424
+@x [1.17] l.423
+  @<Local variables for initialization@>;
   @<Set initial values of key variables@>;
 @y
+  @<Local variables for initialization@>;@#
   @<Set \9{i}initial values of key variables@>;
 @z
 
@@ -265,6 +267,14 @@ one knot from another, we will set |originator(p)=mp_metapost_user| when
 |originator(p)=mp_program_code| in all other cases.
 @z
 
+@x [17.334] l.7812
+  @<Other local variables for |make_choices|@>;
+@y
+  @+@t}\6{@>
+  @<Other local variables for |make_choices|@>;
+  @#
+@z
+
 @x [17.334] l.7817
   @<If consecutive knots are equal, join them explicitly@>;
 @y
@@ -337,6 +347,14 @@ one knot from another, we will set |originator(p)=mp_metapost_user| when
 @<Make sure |h| isn't confused with an elliptical pen@>=
 @y
 @<Make sure \9{h}|h| isn't confused with an elliptical pen@>=
+@z
+
+@x [19.429] l.10565
+  @<Other local variables in |make_path|@>;
+@y
+  @+@t}\6{@>
+  @<Other local variables in |make_path|@>;
+  @#
 @z
 
 @x [19.431] l.10608
@@ -421,6 +439,14 @@ one knot from another, we will set |originator(p)=mp_metapost_user| when
 @ @<Make |mp_link(pp)| point to a copy of object |p|, and update |p| and |pp|@>=
 @y
 @ @<Make \9{m}|mp_link(pp)| point to a copy of object |p|, and update |p| and |pp|@>=
+@z
+
+@x [21.513] l.12586
+  @<Other local variables in |make_dashes|@>;
+@y
+  @+@t}\6{@>
+  @<Other local variables in |make_dashes|@>;
+  @#
 @z
 
 @x [21.513] l.12602
@@ -524,6 +550,14 @@ one knot from another, we will set |originator(p)=mp_metapost_user| when
   @/  @t\4@>@<Other cases for updating the bounding box based on the type of object |p|@>@;
 @z
 
+@x [22.547] l.13395
+  @<Other local variables for |offset_prep|@>;
+@y
+  @+@t}\6{@>
+  @<Other local variables for |offset_prep|@>;
+  @#
+@z
+
 @x [22.549] l.13543
 @ @<Set init...@>=
 @y
@@ -557,6 +591,13 @@ round joins; and square end caps are achieved by setting |join_type=3|.
 approach that is achieved by setting |join_type:=2|.
 @y
 approach that is achieved by setting |join_type=2|.
+@z
+@x [22.583] l.14778
+  @<Other local variables for |make_envelope|@>;
+@y
+  @+@t}\6{@>
+  @<Other local variables for |make_envelope|@>;
+  @#
 @z
 @x [22.583] l.14790
   @<Use |offset_prep| to compute the envelope spec then walk |h| around to
@@ -668,6 +709,14 @@ problems, so we just set |r=NULL| in that case.
 @ @<Set init...@>=
 @y
 @ @<Set \9{i}init...@>=
+@z
+
+@x [27.695] l.17966
+  @<Local variables for formatting calculations@>;
+@y
+  @+@t}\6{@>
+  @<Local variables for formatting calculations@>;
+  @#
 @z
 
 @x [27.701] l.18103
