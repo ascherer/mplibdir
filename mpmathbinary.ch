@@ -1,4 +1,4 @@
-@x [0] l.18
+@x [0] l.16
 \pdfoutput=1
 @y
 
@@ -13,25 +13,25 @@
 @s mpfr_exp_t int
 @z
 
-@x [1] l.20
+@x [1] l.18
 @ Introduction.
 @y
 @* Introduction.
 @d ROUND(a) floor((a)+0.5)
 @z
-@x [1] l.29
+@x [1] l.28
 #define ROUND(a) floor((a)+0.5)
 @h
 @y
 @h
 @z
 
-@x [3] l.38
+@x [3] l.37
 #include "mplib.h"
 @y
 @z
 
-@x [3] l.44
+@x [3] l.43
 #define MP_STR_HELPER(x) #x
 #define MP_STR(x) MP_STR_HELPER(x)
 const char * const COMPILED_gmp_version  = MP_STR(__GNU_MP_VERSION) "." MP_STR( __GNU_MP_VERSION_MINOR) "." MP_STR(__GNU_MP_VERSION_PATCHLEVEL);
@@ -43,7 +43,7 @@ const char * const COMPILED_gmp_version  = MP_STR(__GNU_MP_VERSION) "."@|
   MP_STR(__GNU_MP_VERSION_PATCHLEVEL);
 @z
 
-@x [10] l.265
+@x [10] l.264
   /*mpfr_clears (one, minusone, zero, two_mpfr_t, three_mpfr_t, four_mpfr_t, fraction_multiplier_mpfr_t,*/
   /*            fraction_one_mpfr_t, fraction_one_plus_mpfr_t,  angle_multiplier_mpfr_t, PI_mpfr_t, */
   /*            epsilon_mpfr_t, EL_GORDO_mpfr_t, (mpfr_ptr) 0); */
@@ -57,13 +57,13 @@ const char * const COMPILED_gmp_version  = MP_STR(__GNU_MP_VERSION) "."@|
 #endif
 @z
 
-@x [12] l.490
+@x [12] l.489
 @ Creating an destroying |mp_number| objects
 @y
 @ Creating and destroying |mp_number| objects.
 @z
 
-@x [14] l.501
+@x [14] l.500
 @
 
 @c
@@ -71,15 +71,15 @@ const char * const COMPILED_gmp_version  = MP_STR(__GNU_MP_VERSION) "."@|
 @ @c
 @z
 
-@x [18] l.626
+@x [18] l.625
 @
 
-@d odd(A)   (abs(A)%2==1)
+@d odd(A)   (MPOST_ABS(A)%2==1)
 @y
-@ @d odd(A)   (abs(A)%2==1)
+@ @d odd(A)   (MPOST_ABS(A)%2==1)
 @z
 
-@x [21] l.704
+@x [21] l.703
     /* the buffer should also fit at least strlen("E+\%d", exp) or (numprecdigits-2) worth of zeroes,
      * because with numprecdigits == 33, the str for "1E32" will be "1", and needing 32 extra zeroes,
      * and the decimal dot. To avoid miscalculations by myself, it is safer to add these
@@ -91,20 +91,20 @@ const char * const COMPILED_gmp_version  = MP_STR(__GNU_MP_VERSION) "."@|
      three together.
 @z
 
-@x [24] l.807
+@x [24] l.808
 instruction. But when we are restricted to int-eger arithmetic it
 @y
 instruction. But when we are restricted to integer arithmetic it
 @z
 
-@x [30] l.893
+@x [30] l.896
 @
 @d halfp(A) (integer)((unsigned)(A) >> 1)
 @y
 @ @d halfp(A) (integer)((unsigned)(A) >> 1)
 @z
 
-@x [32] l.906
+@x [32] l.909
 @ The check of the precision is based on the article "27 Bits are not enough for 8-Digit accuracy"
 @ by Bennet Goldberg  which roughly says that
 @ given $p$ digits in base 10 and $q$ digits in base 2,
@@ -122,7 +122,7 @@ where $q$ is the current precision in bits and $a=\left\lceil p/\log_{10}2 + 1\r
 Therefore if $a>q$ the required precision could be too high and we emit a warning.
 @z
 
-@x [38] l.928
+@x [38] l.931
   /* strip leading - or + or 0 or .*/
   if ( (*bufp=='-') || (*bufp=='+') || (*bufp=='0') || (*bufp=='.') ) { lp--; bufp++;}
 @y
@@ -131,14 +131,14 @@ Therefore if $a>q$ the required precision could be too high and we emit a warnin
     lp--; bufp++;
   }
 @z
-@x [38] l.932
+@x [38] l.935
   /* strip also trailing 0s */
   bufp = buf+l-1;
 @y
   bufp = buf+l-1;
   /* strip also trailing 0s */
 @z
-@x [38] l.952
+@x [38] l.955
         mp_snprintf (msg, 256, "Required precision is too high (%d vs. numberprecision = %f, required precision=%d bits vs internal precision=%f bits)", (unsigned int)lp,mpfr_get_d(internal_value (mp_number_precision).data.num, ROUNDING),(int)lpbit,precision_bits);
 @.Number is too large@>;
 @y
@@ -147,13 +147,13 @@ Therefore if $a>q$ the required precision could be too high and we emit a warnin
           "vs internal precision=%f bits)", (unsigned int)lp,mpfr_get_d(internal_value (mp_number_precision).data.num, ROUNDING),(int)lpbit,precision_bits);
 @.Number is too large@>
 @z
-@x [38] l.964
+@x [38] l.967
 @.Enormous number...@>;
 @y
 @.Enormous number...@>
 @z
 
-@x [51] l.1376
+@x [51] l.1381
 @
 
 @c
@@ -161,7 +161,7 @@ Therefore if $a>q$ the required precision could be too high and we emit a warnin
 @ @c
 @z
 
-@x [63] l.1575
+@x [63] l.1580
 @ This is the http://www-cs-faculty.stanford.edu/~uno/programs/rng.c
 with  small cosmetic modifications.
 
@@ -191,7 +191,7 @@ static void ran_array( /* put n new random numbers in aa */
   int n)     /* array length (must be at least KK) */
 @z
 
-@x [63] l.1596
+@x [63] l.1601
 /* */
 /* the following routines are from exercise 3.6--15 */
 /* after calling |ran_start|, get new randoms by, e.g., |x=ran_arr_next()| */
@@ -222,7 +222,7 @@ static void ran_start( /* do this before using |ran_array| */
   long seed) /* selector for different streams */
 @z
 
-@x [63] l.1636
+@x [63] l.1641
 /* */
 #define ran_arr_next() (*ran_arr_ptr>=0? *ran_arr_ptr++: ran_arr_cycle())
 static long ran_arr_cycle(void)
@@ -232,13 +232,13 @@ static long ran_arr_cycle(void)
 static long ran_arr_cycle(void)
 @z
 
-@x [65] l.1680
+@x [65] l.1685
  /* mpfr_remainder (a->data.num, a->data.num, b.data.num, ROUNDING);*/
 @y
  /* |mpfr_remainder (a->data.num, a->data.num, b.data.num, ROUNDING);| */
 @z
 
-@x [70] l.1836
+@x [70] l.1841
   mpfr_clears(a,b,c,d,ab,cd,(mpfr_ptr)0);
   return;
 }

@@ -1,4 +1,4 @@
-@x [0] l.18
+@x [0] l.16
 \pdfoutput=1
 @y
 
@@ -10,19 +10,19 @@
 @s integer int
 @z
 
-@x [1] l.20
+@x [1] l.18
 @ Introduction.
 @y
 @* Introduction.
 
 @d ROUND(a) floor((a)+0.5)
 @z
-@x [1] l.29
+@x [1] l.28
 #define ROUND(a) floor((a)+0.5)
 @y
 @z
 
-@x [3] l.38
+@x [3] l.37
 #include "mplib.h"
 @y
 @z
@@ -41,25 +41,25 @@
 @ @c
 @z
 
-@x [25] l.648
+@x [25] l.653
 @
 @d halfp(A) (integer)((unsigned)(A) >> 1)
 @y
 @ @d halfp(A) (integer)((unsigned)(A) >> 1)
 @z
 
-@x [27] l.678
+@x [27] l.683
 @.Number is too large@>;
 @y
 @.Number is too large@>
 @z
-@x [27] l.689
+@x [27] l.694
 @.Enormous number...@>;
 @y
 @.Enormous number...@>
 @z
 
-@x [40] l.1029
+@x [39] l.1037
 @
 
 @c
@@ -67,36 +67,36 @@
 @ @c
 @z
 
-@x [41] l.1054
+@x [40] l.1062
 @.Square root...replaced by 0@>;
 @y
 @.Square root...replaced by 0@>
 @z
 
-@x [44] l.1107
+@x [43] l.1115
 @.Pythagorean...@>;
 @y
 @.Pythagorean...@>
 @z
 
-@x [47] l.1142
+@x [46] l.1150
 @.Logarithm...replaced by 0@>;
 @y
 @.Logarithm...replaced by 0@>
 @z
 
-@x [50] l.1198
+@x [49] l.1206
 @.angle(0,0)...zero@>;
 @y
 @.angle(0,0)...zero@>
 @z
 
-@x [54] l.1245
+@x [53] l.1254
 @ This is the http://www-cs-faculty.stanford.edu/~uno/programs/rng.c
 @y
 @ This is the \.{http://www-cs-faculty.stanford.edu/\TILDE/uno/programs/rng.c}
 @z
-@x [54] l.1248
+@x [53] l.1257
 @c
 #define KK 100                     /* the long lag  */
 #define LL  37                     /* the short lag */
@@ -122,7 +122,7 @@ static void ran_array( /* put n new random numbers in aa */
   int n)     /* array length (must be at least KK) */
 @z
 
-@x [54] l.1266
+@x [53] l.1275
 /* */
 /* the following routines are from exercise 3.6--15 */
 /* after calling |ran_start|, get new randoms by, e.g., |x=ran_arr_next()| */
@@ -154,7 +154,7 @@ static void ran_start( /* do this before using |ran_array| */
   long seed) /* selector for different streams */
 @z
 
-@x [54] l.1306
+@x [53] l.1315
 /* */
 #define ran_arr_next() (*ran_arr_ptr>=0? *ran_arr_ptr++: ran_arr_cycle())
 @y
@@ -162,7 +162,7 @@ static void ran_start( /* do this before using |ran_array| */
 @c
 @z
 
-@x [61] l.1490
+@x [60] l.1499
   return ;
 }
 

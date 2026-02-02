@@ -1,4 +1,4 @@
-@x [0] l.18
+@x [0] l.16
 \pdfoutput=1
 
 @ Introduction.
@@ -19,27 +19,27 @@
 @* Introduction.
 @d ROUND(a) floor((a)+0.5)
 @z
-@x [1] l.29
+@x [1] l.28
 #define ROUND(a) floor((a)+0.5)
 @y
 @z
 
-@x [3] l.38
+@x [3] l.37
 #include "mplib.h"
 @y
 @z
 
-@x [8] l.285
+@x [8] l.312
 static void decNumberAtan2 (decNumber *result, decNumber *y, decNumber *x, decContext *set)
 @y
 @ @c
 static void decNumberAtan2 (decNumber *result, decNumber *y, decNumber *x, decContext *set)
 @z
 
-@x [11] l.611
-  /* for (i = 0; i <= last_cached_factorial; i++) {*/
+@x [11] l.638
+  /* for (i = 0; i <= last_cached_factorial; i++) \{*/
   /*  free(factorials[i]);*/
-  /* }*/
+  /* \}*/
   /* free(factorials); */
 @y
 #if 0
@@ -50,7 +50,7 @@ static void decNumberAtan2 (decNumber *result, decNumber *y, decNumber *x, decCo
 #endif
 @z
 
-@x [14] l.628
+@x [14] l.655
 @
 
 @c
@@ -58,34 +58,34 @@ static void decNumberAtan2 (decNumber *result, decNumber *y, decNumber *x, decCo
 @ @c
 @z
 
-@x [18] l.775
+@x [18] l.810
 @
 
-@d odd(A)   (abs(A)%2==1)
+@d odd(A)   (MPOST_ABS(A)%2==1)
 @y
-@ @d odd(A)   (abs(A)%2==1)
+@ @d odd(A)   (MPOST_ABS(A)%2==1)
 @z
 
-@x [30] l.1001
+@x [30] l.1040
 @
 @d halfp(A) (integer)((unsigned)(A) >> 1)
 @y
 @ @d halfp(A) (integer)((unsigned)(A) >> 1)
 @z
 
-@x [32] l.1042
+@x [32] l.1090
         const char *hlp[] = {"Continue and I'll round the value until it fits the current numberprecision",
 @y
         const char *hlp[] = {"Continue and I'll round the value " @| "until it fits the current numberprecision",
 @z
 
-@x [36] l.1199
+@x [36] l.1249
   if (decNumberLess(&denom,&r2)) { /* num/4 >= denom => denom < num/4*/
 @y
   if (decNumberLess(&denom,&r2)) { /* |num/4 >= denom|$\Longrightarrow$|denom < num/4| */
 @z
 
-@x [44] l.1463
+@x [44] l.1513
 relying on |real| arithmetic or system subroutines for sines, cosines, etc.
 
 @
@@ -98,13 +98,13 @@ relying on |real| arithmetic or system subroutines for sines, cosines, etc.
 @z
 
 
-@x [46] l.1491
+@x [46] l.1541
 @.Square root...replaced by 0@>;
 @y
 @.Square root...replaced by 0@>
 @z
 
-@x [47] l.1511
+@x [47] l.1561
   /*|if (set.status != 0) {|*/
   /*|  mp->arith_error = true;|*/
   /*|  decNumberCopy(ret->data.num, &EL_GORDO_decNumber);|*/
@@ -118,36 +118,36 @@ relying on |real| arithmetic or system subroutines for sines, cosines, etc.
 #endif
 @z
 
-@x [49] l.1552
+@x [49] l.1602
 @.Pythagorean...@>;
 @y
 @.Pythagorean...@>
 @z
 
-@x [51] l.1586
+@x [51] l.1636
 @.Logarithm...replaced by 0@>;
 @y
 @.Logarithm...replaced by 0@>
 @z
 
-@x [53] l.1620
+@x [53] l.1670
   if (decNumberIsZero((decNumber *)x_orig.data.num) && decNumberIsZero((decNumber *)y_orig.data.num)) {
 @y
   if (decNumberIsZero((decNumber *)x_orig.data.num) && @| decNumberIsZero((decNumber *)y_orig.data.num)) {
 @z
 
-@x [54] l.1651
+@x [54] l.1701
 @.angle(0,0)...zero@>;
 @y
 @.angle(0,0)...zero@>
 @z
 
-@x [57] l.1760
+@x [57] l.1810
 @ This is the {\tt http://www-cs-faculty.stanford.edu/~uno/programs/rng.c}
 @y
 @ This is the \.{http://www-cs-faculty.stanford.edu/\TILDE/uno/programs/rng.c}
 @z
-@x [57] l.1763
+@x [57] l.1813
 @c
 #define KK 100                     /* the long lag  */
 #define LL  37                     /* the short lag */
@@ -172,7 +172,7 @@ static void ran_array( /* put n new random numbers in aa */
   int n)     /* array length (must be at least KK) */
 @z
 
-@x [57] l.1781
+@x [57] l.1831
 /* */
 /* the following routines are from exercise 3.6--15 */
 /* after calling |ran_start|, get new randoms by, e.g., "|x=ran_arr_next()|" */
@@ -204,7 +204,7 @@ static void ran_start( /* do this before using |ran_array| */
   long seed) /* selector for different streams */
 @z
 
-@x [57] l.1821
+@x [57] l.1871
 /* */
 #define ran_arr_next() (*ran_arr_ptr>=0? *ran_arr_ptr++: ran_arr_cycle())
 static long ran_arr_cycle(void)
@@ -214,7 +214,7 @@ static long ran_arr_cycle(void)
 static long ran_arr_cycle(void)
 @z
 
-@x [64] l.1989
+@x [64] l.2041
 /*
 |void mp_decimal_ab_vs_cd (MP mp, mp_number *ret, mp_number a_orig, mp_number b_orig, mp_number c_orig, mp_number d_orig) {|
 |  decNumber a, b, c, d;|

@@ -1,4 +1,4 @@
-@x [0] l.28
+@x [0] l.27
 \def\title{Reading TEX metrics files}
 \pdfoutput=1
 @y
@@ -17,13 +17,13 @@
 @* Reading \TEX/ metrics files.
 @z
 
-@x [2] l.48
+@x [2] l.49
 #include "mplib.h"
 #include "mpmp.h" /* internal header */
 @y
 @z
 
-@x [6] l.110
+@x [6] l.111
 @<Read the \.{TFM} size fields@>
 @<Use the size fields to allocate space in |font_info|@>
 @<Read the \.{TFM} header@>
@@ -37,52 +37,52 @@
   |goto done|@>@;
 @z
 
-@x [7] l.118
+@x [7] l.119
 needed if it causes a system error to refer to |tfm_infile^| or call
 @y
 needed if it causes a system error to refer to |tfm_infile|$\mathchar"222$ or call
 @z
 
-@x [7] l.122
+@x [7] l.123
 ``|begin get(tfm_infile); if eof(tfm_infile) then goto bad_tfm; end|.''
 @y
 ``\&{begin} $\\{get}(\\{tfm\_infile})$; \&{if} $\\{eof}(\\{tfm\_infile})$ %
 \&{then} \&{goto} \\{bad\_tfm}; \&{end}.''
 @z
 
-@x [7] l.131
+@x [7] l.132
 } while (0)
 @y
 } while (0)@;
 @z
 
-@x [7] l.138
+@x [7] l.139
 @<Read the \.{TFM} size fields@>=
 @y
 @<Read the \9{t}\.{TFM} size fields@>=
 @z
 
-@x [8] l.164
+@x [8] l.165
   font_data *font_info;
   font_info = mp_xmalloc (mp,(l+1),sizeof(font_data));
 @y
   font_data *font_info = mp_xmalloc (mp,(l+1),sizeof(font_data));
 @z
 
-@x [9] l.187
+@x [9] l.188
 @<Read the \.{TFM} header@>=
 @y
 @<Read the \9{t}\.{TFM} header@>=
 @z
 
-@x [10] l.197
+@x [10] l.198
 @ @<Read the character data and the width, height, and depth tables...@>=
 @y
 @ @<Read the \9{c}character data and the width, height, and depth tables...@>=
 @z
 
-@x [12] l.245
-file_opened=true
+@x [12] l.246
+file_opened=True
 
 
 
@@ -92,7 +92,7 @@ file_opened=true
 
 
 @y
-file_opened=true  @;
+file_opened=True  @;
 
 @* Index.
 @z
