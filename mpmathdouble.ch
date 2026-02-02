@@ -59,6 +59,83 @@
 @.Enormous number...@>
 @z
 
+@x [32] l.831
+ /* TODO: remove this code until the end */
+/*   a = a_orig.data.dval; */
+/*   b = b_orig.data.dval; */
+/*   c = c_orig.data.dval; */
+/*   d = d_orig.data.dval; */
+/*   <Reduce to the case that |a,c>=0|, |b,d>0| >; */
+/*   while (1) \{ */
+/*     q = a / d; */
+/*     r = c / b; */
+/*     if (q != r) \{ */
+/*       ret->data.dval = (q > r ? 1 : -1); */
+/*       goto RETURN; */
+/*     \} */
+/*     q = a % d; */
+/*     r = c % b; */
+/*     if (r == 0) \{ */
+/*       ret->data.dval = (q ? 1 : 0); */
+/*       goto RETURN; */
+/*     \} */
+/*     if (q == 0) \{ */
+/*       ret->data.dval = -1; */
+/*       goto RETURN; */
+/*     \} */
+/*     a = b; */
+/*     b = q; */
+/*     c = d; */
+/*     d = r; */
+/*   \}                             /\* now |a>d>0| and |c>b>0| *\/ */
+/* RETURN: */
+/* \#if MPOST_DEBUG */
+/*   fprintf(stdout, "\n%f = ab_vs_cd(%f,%f,%f,%f)", mp_number_to_double(*ret),  */
+/* mp_number_to_double(a_orig),mp_number_to_double(b_orig), */
+/* mp_number_to_double(c_orig),mp_number_to_double(d_orig)); */
+/* \#endif */
+@y
+@z
+
+@x [32] l.869
+/* <Reduce to the case that \|a...>= */
+/* if (a < 0) \{ */
+/*   a = -a; */
+/*   b = -b; */
+/* \} */
+/* if (c < 0) \{ */
+/*   c = -c; */
+/*   d = -d; */
+/* \} */
+/* if (d <= 0) \{ */
+/*   if (b >= 0) \{ */
+/*     if ((a == 0 || b == 0) && (c == 0 || d == 0))  */
+/*       ret->data.dval = 0; */
+/*     else */
+/*       ret->data.dval = 1; */
+/*     goto RETURN; */
+/*   \} */
+/*   if (d == 0) \{ */
+/*     ret->data.dval = (a == 0 ? 0 : -1); */
+/*     goto RETURN; */
+/*   \} */
+/*   q = a; */
+/*   a = c; */
+/*   c = q; */
+/*   q = -b; */
+/*   b = -d; */
+/*   d = q; */
+/* \} else if (b <= 0) \{ */
+/*   if (b < 0 && a > 0) \{ */
+/*     ret->data.dval  = -1; */
+/*     return; */
+/*   \} */
+/*   ret->data.dval = (c == 0 ? 0 : -1); */
+/*   goto RETURN; */
+/* \} */
+@y
+@z
+
 @x [39] l.1037
 @
 

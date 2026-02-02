@@ -58,6 +58,54 @@ static void decNumberAtan2 (decNumber *result, decNumber *y, decNumber *x, decCo
 @ @c
 @z
 
+@x [15] l.670
+  //decNumberFromInt32(A->data.num,B);
+@y
+  //|decNumberFromInt32(A->data.num,B);|
+@z
+
+@x [15] l.674
+  //decNumberFromInt32(A->data.num,B);
+@y
+  //|decNumberFromInt32(A->data.num,B);|
+@z
+
+@x [15] l.680
+  //decNumberFromInt32(A->data.num,B);
+@y
+  //|decNumberFromInt32(A->data.num,B);|
+@z
+
+@x [15] l.701
+  //decNumberFromInt32(&c, C);
+@y
+  //|decNumberFromInt32(&c, C);|
+@z
+
+@x [15] l.707
+  //decNumberFromInt32(&c, C);
+@y
+  //|decNumberFromInt32(&c, C);|
+@z
+
+@x [15] l.747
+  //decNumberFromInt32(&b, B);
+@y
+  //|decNumberFromInt32(&b, B);|
+@z
+
+@x [15] l.754
+  //decNumberFromInt32(&b, B);
+@y
+  //|decNumberFromInt32(&b, B);|
+@z
+
+@x [15] l.760
+  //decNumberFromInt32(&b, B);
+@y
+  //|decNumberFromInt32(&b, B);|
+@z
+
 @x [18] l.810
 @
 
@@ -212,6 +260,12 @@ static long ran_arr_cycle(void)
 @ @d ran_arr_next() (*ran_arr_ptr>=0? *ran_arr_ptr++: ran_arr_cycle())
 @c
 static long ran_arr_cycle(void)
+@z
+
+@x [60] l.1927
+  /*op = (unsigned)ran_arr_next(); */
+@y
+  /*|op = (unsigned)ran_arr_next();|*/
 @z
 
 @x [64] l.2041

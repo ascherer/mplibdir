@@ -183,6 +183,12 @@ returns |false| and sets |last:=first|.  In general, the |ASCII_code|
 returns |false| and sets |last=first|.  In general, the |ASCII_code|
 @z
 
+@x [6.121] l.2108
+  //uint32_t s1;
+@y
+  //|uint32_t s1;|
+@z
+
 @x [11.203] l.4260
 @ @<Set initial ...@>=
 @y
