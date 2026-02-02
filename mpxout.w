@@ -39,6 +39,7 @@ The local C preprocessor definitions have to come after the C includes
 in order to prevent name clashes.
 
 @c
+#include "mpconfig.h"
 #include <w2c/config.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -110,8 +111,7 @@ From the Pascal code of DVItoMP two implicit types are inherited: |web_boolean| 
 
 The more complex datatypes are defined in the following sections. 
 
-@d true 1
-@d false 0
+
 
 @c
 typedef signed int web_integer;
@@ -1012,7 +1012,7 @@ the commands for character~|c| starting at
 commands occupy positions |fbase[f]| through |ftop[f]-1| in the |font_num|
 table and the |internal_num| array gives the corresponding internal font
 numbers.  If such an internal font number~|i| does not correspond to
-some font occuring in the \.{DVI} file, then |font_num[i]| has not been
+some font occurring in the \.{DVI} file, then |font_num[i]| has not been
 assigned a meaningful value; this is indicated by |local_only[i]=true|.
 
 If font~|f| is not virtual, then |fbase[f]=0| and |ftop[f]=0|.  The |start_cmd|
