@@ -230,6 +230,18 @@ returns |false| and sets |last=first|.  In general, the |ASCII_code|
 @ @<Set \9{i}initial ...@>=
 @z
 
+@x [11.205] l.4382
+enum mp_color_model {
+@y
+enum mp@&_color@&_model @+ { @t\1@>@/
+@:mp_color_model}{\bf mp\_color\_model@>
+@z
+@x [11.205] l.4388
+};
+@y
+@t\2@>@/};
+@z
+
 @x [11.215] l.4608
 @<Set initial ...@>=
 @y
