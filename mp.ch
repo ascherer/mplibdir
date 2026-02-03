@@ -64,8 +64,8 @@ wholesale.
 /* integer64 should be alredy defined in source/texk/web2c/w2c/config.h */
 /* but just in case */
 @y
-/* integer64 should be alredy defined in source/texk/web2c/w2c/config.h
-but just in case */
+/* |integer64| should be already defined in
+\.{source/texk/web2c/w2c/config.h}, but just in case */
 @z
 
 @x [1.5] l.157
