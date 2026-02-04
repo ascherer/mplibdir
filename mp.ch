@@ -234,7 +234,7 @@ returns |false| and sets |last=first|.  In general, the |ASCII_code|
 enum mp_color_model {
 @y
 enum mp@&_color@&_model @+ { @t\1@>@/
-@:mp_color_model}{\bf mp\_color\_model@>
+@!@:mp_color_model}{\bf mp\_color\_model@>
 @z
 @x [11.205] l.4388
 };
