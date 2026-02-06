@@ -162,7 +162,8 @@ else
 "  MPNAME.tfm), where NNN are the character numbers generated.\n" @|
 "  Any remaining COMMANDS are processed as "@= @>P_UP@= @>"MetaPost input,\n" @|
 "  after MPNAME is read.\n\n" @|
-"  With a --dvitomp argument, "@= @>P_UP@= @>"MetaPost acts as DVI-to-MPX converter only.\n" @|
+"  With a --dvitomp argument, "@= @>P_UP@= @>"MetaPost " @|
+"acts as DVI-to-MPX converter only.\n" @|
 "  Call "@= @>P_UP@= @>"MetaPost with --dvitomp --help for option explanations.\n\n");
 @z
 
@@ -205,10 +206,11 @@ else
 @y
 "  -progname=STRING          set program name to STRING\n" @|
 #ifdef UPMP
-"  -kanji=STRING             set kanji encoding (STRING=euc|jis|sjis|utf8|uptex)\n" @|
+@t\kern2em@>"  -kanji=STRING             set kanji encoding (STRING=euc|jis|sjis|utf8|uptex)\n" @|
 #else
-"  -kanji=STRING             set kanji encoding (sjis, jis, euc, utf8)\n" @|
+@t\kern2em@>"  -kanji=STRING             set kanji encoding (sjis, jis, euc, utf8)\n" @|
 #endif
+@t\kern2em@>
 @z
 
 @x
@@ -226,9 +228,9 @@ else
 @y
 "Current maintainer of MetaPost: Luigi Scarso.\n"
 #ifdef UPMP
-"Authors of upMetaPost: Michio Matsuyama, Hideyuki Suzuki, Takuji Tanaka.\n\n"
+@t\kern2em@>"Authors of upMetaPost: Michio Matsuyama, Hideyuki Suzuki, Takuji Tanaka.\n\n"
 #else
-"Authors of pMetaPost: Michio Matsuyama, Hideyuki Suzuki.\n\n"
+@t\kern2em@>"Authors of pMetaPost: Michio Matsuyama, Hideyuki Suzuki.\n\n"
 #endif
 @z
 
