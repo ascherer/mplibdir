@@ -129,7 +129,7 @@ static void mp_crossing_point (MP mp, mp_number *ret, @| mp_number aa, mp_number
 k--
 @y
 }
-k--}
+k--;}
 @z
 
 @x [45] l.1273
