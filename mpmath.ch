@@ -10,6 +10,8 @@
 @s integer int
 @s quarterword int
 @s boolean int
+@s integer64 int
+@s mpinteger64 int
 @z
 
 @x [1] l.17

@@ -15,6 +15,7 @@
 @s integer int
 @s int32_t int
 @s uint32_t int
+@s integer64 int
 
 @* Introduction.
 @d ROUND(a) floor((a)+0.5)

@@ -11,6 +11,7 @@
 @s boolean int
 @s math_data int
 @s mpfr_exp_t int
+@s integer64 int
 @z
 
 @x [1] l.18

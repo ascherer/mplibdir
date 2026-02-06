@@ -8,6 +8,7 @@
 @s mp_variable_type int
 @s math_data int
 @s integer int
+@s integer64 int
 @z
 
 @x [1] l.18
