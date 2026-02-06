@@ -262,6 +262,26 @@ enum mp@&_color@&_model @+ { @t\1@>@/
 @y
 @z
 
+@x [14.273] l.6204
+|value| points to a 12-word node containing six values, identified by
+@y
+|value| points to a 12-word node containing six values, identified by
+the entries
+@z
+
+@x [14.276] l.6270
+@ Variables of type \&{color} have 3~values in 6~words identified by |mp_red_part_sector|,
+@y
+@ Variables of type \&{color} have 3~values in a 6-word node identified by
+the entries |mp_red_part_sector|,
+@z
+
+@x [14.288] l.6556
+capable of growing. This operation is done only when |mp_name_type(p)=root|,
+@y
+capable of growing. This operation is done only when |mp_name_type(p)| |=root|,
+@z
+
 @x [15.298] l.7028
 @ @<Set init...@>=
 @y
@@ -297,6 +317,13 @@ one knot from another, we will set |originator(p)=mp_metapost_user| when
 @<If consecutive knots are equal, join them explicitly@>=
 @y
 @<If \9{c}consecutive knots are equal, join them explicitly@>=
+@z
+
+@x [17.340] l.7910
+checking the |mp_left_type| and |mp_right_type| fields.
+
+@y
+checking the fields |mp_left_type| and |mp_right_type|.
 @z
 
 @x [17.345] l.8037
@@ -525,6 +552,12 @@ one knot from another, we will set |originator(p)=mp_metapost_user| when
     @<If |dd| has `fallen off the end', back up to the beginning and fix |xoff|@>;
 @y
     @<If \9{d}|dd| has `fallen off the end', back up to the beginning and fix |xoff|@>;
+@z
+
+@x [21.526] l.12881
+first |dd| where |take_scaled (hsf, stop_x(dd))| is large enough to make an
+@y
+first |dd| where the value returned by |take_scaled (hsf, stop_x(dd))| is large enough to make an
 @z
 
 @x [21.527] l.12899
@@ -905,6 +938,12 @@ length of line~1. If $l+k>h$, some cropping is necessary, so we set |n=h|
 @ @<Set init...@>=
 @y
 @ @<Set \9{i}init...@>=
+@z
+
+@x [36.934] l.23487
+just before \MP\ calls |scan_expression|, if the expression should be
+@y
+just before \MP\ calls the procedure |scan_expression|, if the expression should be
 @z
 
 @x [36.934] l.23495
