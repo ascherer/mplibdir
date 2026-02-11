@@ -17,10 +17,35 @@
 @* Reading \TEX/ metrics files.
 @z
 
+@x [2] l.44
+#include "mpconfig.h"
+@y
+#include "tfmin.h"
+@z
+
 @x [2] l.49
 #include "mplib.h"
 #include "mpmp.h" /* internal header */
 @y
+@z
+
+@x [2] l.53
+@<Declarations@>
+@y
+@z
+
+@x [3] l.60
+@<Declarations@>=
+font_number mp_read_font_info (MP mp, char *fname);
+@y
+@s MP int
+@(tfmin.h@>=
+#ifndef MP_TFMIN_H
+#define MP_TFMIN_H 1
+#include "mplib.h" /* |MP| */
+#include "mpmp.h" /* |font_number| */
+font_number mp_read_font_info (MP mp, char *fname);
+#endif /* |MP_TFMIN_H| */
 @z
 
 @x [6] l.111

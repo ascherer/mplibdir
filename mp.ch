@@ -134,6 +134,12 @@ wholesale.
 #include "mpstrings.h"          /* internal header */ @t@>
 @z
 
+@x [1.7] l.259
+extern font_number mp_read_font_info (MP mp, char *fname);      /* \.{tfmin.w} */
+@y
+#include "tfmin.h" /* |mp_read_font_info| */
+@z
+
 @x [1.8] l.267
 until the c99 standard (and that is too new for us). Lets' hope that at least
 @y
