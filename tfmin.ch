@@ -3,12 +3,12 @@
 \pdfoutput=1
 @y
 
-@s quarterword int
 @s MP int
 @s boolean int
 @s font_data int
 @s font_number int
 @s halfword int
+@s quarterword int
 @z
 
 @x [1] l.30
@@ -38,7 +38,6 @@
 @<Declarations@>=
 font_number mp_read_font_info (MP mp, char *fname);
 @y
-@s MP int
 @(tfmin.h@>=
 #ifndef MP_TFMIN_H
 #define MP_TFMIN_H 1
