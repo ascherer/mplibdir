@@ -7,9 +7,13 @@
 @s tm int
 @z
 
-@x [2] l.55
+@x [2] l.52
+#include <mplib.h>
+#include <mpxout.h>
 @= /*@@null@@*/ @> static char *mpost_tex_program = NULL;
 @y
+#include "mplib.h"
+#include "mpxout.h"
 @= /*@@null@@*/ @> @;@+ static char *mpost_tex_program = NULL;
 @z
 

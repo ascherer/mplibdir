@@ -41,8 +41,7 @@ font_number mp_read_font_info (MP mp, char *fname);
 @(tfmin.h@>=
 #ifndef MP_TFMIN_H
 #define MP_TFMIN_H 1
-#include "mplib.h" /* |MP| */
-#include "mpmp.h" /* |font_number| */
+#include "mpmp.h" /* internal header */
 font_number mp_read_font_info (MP mp, char *fname);
 #endif /* |MP_TFMIN_H| */
 @z
