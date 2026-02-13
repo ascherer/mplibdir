@@ -49,6 +49,11 @@
   \readindex}
 @z
 
+@x [1.3] l.91
+#include <stdlib.h>
+@y
+@z
+
 @x [1.4] l.111
 wholesale.
 @y
