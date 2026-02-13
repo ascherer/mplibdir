@@ -10,10 +10,12 @@
 @x [2] l.52
 #include <mplib.h>
 #include <mpxout.h>
+#include <kpathsea/kpathsea.h>
 @= /*@@null@@*/ @> static char *mpost_tex_program = NULL;
 @y
 #include "mplib.h"
 #include "mpxout.h"
+#include <kpathsea/kpathsea.h>
 @= /*@@null@@*/ @> @;@+ static char *mpost_tex_program = NULL;
 @z
 

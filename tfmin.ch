@@ -18,16 +18,11 @@
 @* Introduction.
 @z
 
-@x [2] l.44
-#include "mpconfig.h"
-@y
-#include "tfmin.h"
-@z
-
 @x [2] l.49
 #include "mplib.h"
 #include "mpmp.h" /* internal header */
 @y
+#include "tfmin.h" /* internal header */
 @z
 
 @x [2] l.53
