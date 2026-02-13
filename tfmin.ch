@@ -2,6 +2,7 @@
 \def\title{Reading TEX metrics files}
 \pdfoutput=1
 @y
+\def\title{Reading TEX metrics files}
 
 @s MP int
 @s boolean int
@@ -14,7 +15,7 @@
 @x [1] l.30
 @ Introduction.
 @y
-@* Reading \TEX/ metrics files.
+@* Introduction.
 @z
 
 @x [2] l.44
