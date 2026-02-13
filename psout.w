@@ -5297,12 +5297,11 @@ structures and access macros.
 #define gr_tyx_val(A)      ((mp_text_object *)A)->tyx
 #define gr_tyy_val(A)      ((mp_text_object *)A)->tyy
 
-@
-@d GRAPHIC_BODY
-  int type;
-  struct mp_graphic_object * next @;
+@ @<Internal Postscript header information@>=
+#define GRAPHIC_BODY \
+  int type; \
+  struct mp_graphic_object * next @;@t\2\2@>@/
 
-@<Internal Postscript header information@>=
 typedef struct mp_graphic_object {
   GRAPHIC_BODY;
 } mp_graphic_object;
