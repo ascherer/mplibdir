@@ -30,6 +30,12 @@
 @y
 @z
 
+@x [6] l.178
+    uint32_t ms,ls;;
+@y
+    uint32_t ms,ls;
+@z
+
 @x [8] l.312
 static void decNumberAtan2 (decNumber *result, decNumber *y, decNumber *x, decContext *set)
 @y

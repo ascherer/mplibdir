@@ -162,6 +162,30 @@ Therefore if $a>q$ the required precision could be too high and we emit a warnin
 @ @c
 @z
 
+@x [52] l.1405
+@.Square root...replaced by 0@>;
+@y
+@.Square root...replaced by 0@>
+@z
+
+@x [55] l.1463
+@.Pythagorean...@>;
+@y
+@.Pythagorean...@>
+@z
+
+@x [57] l.1495
+@.Logarithm...replaced by 0@>;
+@y
+@.Logarithm...replaced by 0@>
+@z
+
+@x [60] l.1548
+@.angle(0,0)...zero@>;
+@y
+@.angle(0,0)...zero@>
+@z
+
 @x [63] l.1580
 @ This is the http://www-cs-faculty.stanford.edu/~uno/programs/rng.c
 with  small cosmetic modifications.

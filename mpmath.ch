@@ -160,6 +160,12 @@ k--;}
   else {
 @z
 
+@x [49] l.1363
+@.Pythagorean...@>;
+@y
+@.Pythagorean...@>
+@z
+
 @x [50] l.1380
 static const mpinteger64 spec_log[29] = { 0,        /* special logarithms */
   93032640, 38612034, 17922280, 8662214, 4261238, 2113709,
