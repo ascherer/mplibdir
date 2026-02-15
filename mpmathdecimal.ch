@@ -22,7 +22,11 @@
 @z
 @x [1] l.28
 #define ROUND(a) floor((a)+0.5)
+@h
+
+@ @c
 @y
+@h
 @z
 
 @x [3] l.37
@@ -57,12 +61,21 @@ static void decNumberAtan2 (decNumber *result, decNumber *y, decNumber *x, decCo
 #endif
 @z
 
+@x [12] l.645
+@ Creating an destroying |mp_number| objects
+
+@ @c
+@y
+@ Creating and destroying |mp_number| objects.
+
+@c
+@z
+
 @x [14] l.655
 @
 
 @c
 @y
-@ @c
 @z
 
 @x [15] l.670

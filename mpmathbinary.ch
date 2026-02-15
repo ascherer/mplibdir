@@ -23,6 +23,8 @@
 @x [1] l.28
 #define ROUND(a) floor((a)+0.5)
 @h
+
+@ @c
 @y
 @h
 @z
@@ -60,8 +62,12 @@ const char * const COMPILED_gmp_version  = MP_STR(__GNU_MP_VERSION) "."@|
 
 @x [12] l.489
 @ Creating an destroying |mp_number| objects
+
+@ @c
 @y
 @ Creating and destroying |mp_number| objects.
+
+@c
 @z
 
 @x [14] l.500
@@ -69,7 +75,6 @@ const char * const COMPILED_gmp_version  = MP_STR(__GNU_MP_VERSION) "."@|
 
 @c
 @y
-@ @c
 @z
 
 @x [18] l.625
@@ -78,6 +83,14 @@ const char * const COMPILED_gmp_version  = MP_STR(__GNU_MP_VERSION) "."@|
 @d odd(A)   (MPOST_ABS(A)%2==1)
 @y
 @ @d odd(A)   (MPOST_ABS(A)%2==1)
+@z
+
+@x [20] l.683
+or zero.
+@y
+or zero.
+
+@d halfp(A) (integer)((unsigned)(A) >> 1)
 @z
 
 @x [21] l.703
@@ -102,7 +115,6 @@ instruction. But when we are restricted to integer arithmetic it
 @
 @d halfp(A) (integer)((unsigned)(A) >> 1)
 @y
-@ @d halfp(A) (integer)((unsigned)(A) >> 1)
 @z
 
 @x [32] l.909

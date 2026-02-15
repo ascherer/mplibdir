@@ -20,9 +20,23 @@
 @* Introduction.
 @z
 
+@x [1] l.27
+@h
+
+@ @c
+@y
+@h
+@z
+
 @x [3] l.35
 #include "mplib.h"
 @y
+@z
+
+@x [5] l.42
+@ Here are the functions that are static as they are not used elsewhere
+@y
+Here are the functions that are static as they are not used elsewhere.
 @z
 
 @x [5] l.47
@@ -41,6 +55,22 @@ static void mp_velocity (MP mp, mp_number *ret, @| mp_number st, mp_number ct, m
 static void mp_set_number_from_of_the_way(MP mp, mp_number *A, mp_number t, mp_number B, mp_number C);
 @y
 static void mp_set_number_from_of_the_way(MP mp, @| mp_number *A, mp_number t, mp_number B, mp_number C);
+@z
+
+@x [8] l.325
+@ Creating an destroying |mp_number| objects
+
+@ @c
+@y
+@ Creating and destroying |mp_number| objects.
+
+@c
+@z
+
+@x [10] l.334
+@
+@c
+@y
 @z
 
 @x [11] l.374

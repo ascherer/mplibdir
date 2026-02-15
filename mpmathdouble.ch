@@ -20,12 +20,26 @@
 @z
 @x [1] l.28
 #define ROUND(a) floor((a)+0.5)
+@h
+
+@ @c
 @y
+@h
 @z
 
 @x [3] l.37
 #include "mplib.h"
 @y
+@z
+
+@x [8] l.325
+@ Creating an destroying |mp_number| objects
+
+@ @c
+@y
+@ Creating and destroying |mp_number| objects.
+
+@c
 @z
 
 @x [9] l.331
@@ -39,7 +53,6 @@
   n->type = t;
 }
 
-@ @c
 @z
 
 @x [25] l.653
