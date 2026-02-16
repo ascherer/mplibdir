@@ -222,6 +222,12 @@ returns |false| and sets |last:=first|.  In general, the |ASCII_code|
 returns |false| and sets |last=first|.  In general, the |ASCII_code|
 @z
 
+@x [3.70] l.1287
+(in which case the line was entirely blank) or |buffer[last-1]<>" "|.
+@y
+(in which case the line was entirely blank) or |buffer[last-1]!=" "|.
+@z
+
 @x [6.121] l.2103
 @s mp_sym int
 @y
@@ -517,6 +523,12 @@ checking the fields |mp_left_type| and |mp_right_type|.
   @<Flush the \9{d}dash list, recycle |h| and return |NULL|@>;
 @z
 
+@x [21.517] l.12649
+@ We stash |p| in |dash_info(d)| if |mp_dash_p(p)<>0| so that subsequent processing can
+@y
+@ We stash |p| in |dash_info(d)| if |mp_dash_p(p)!=0| so that subsequent processing can
+@z
+
 @x [21.517] l.12654
 @<Make |d| point to a new dash node created from stroke |p| and path...@>=
 @<Make sure |p| and |p0| are the same color and |goto not_found| if there is
@@ -749,6 +761,12 @@ problems, so we just set |r=NULL| in that case.
 @ @<Make \9{c}|c| look like a cycle of length one@>=
 @z
 
+@x [22.600] l.15162
+That knot is |p| but if |p<>c|, its coordinates have already been offset by |w|.
+@y
+That knot is |p| but if |p!=c|, its coordinates have already been offset by |w|.
+@z
+
 @x [23.616] l.15920
   @<Initialize for intersections at level zero@>;
 @y
@@ -793,6 +811,12 @@ descriptive information on line~1, and set |n=l+k|; here |n| is the
 length of line~1. If $l+k>h$, some cropping is necessary, so we set |n=h|
 @z
 
+@x [28.711] l.18323
+If |cur_sym<>0|, the values of |cur_cmd| and |cur_mod| are irrelevant.
+@y
+If |cur_sym!=0|, the values of |cur_cmd| and |cur_mod| are irrelevant.
+@z
+
 @x [29.735] l.18947
             |cur_sym:=mp->frozen_mpx_break| and |goto common_ending| */
 @y
@@ -827,6 +851,12 @@ length of line~1. If $l+k>h$, some cropping is necessary, so we set |n=h|
 @<Set initial...@>=
 @y
 @<Set \9{i}initial...@>=
+@z
+
+@x [32.798] l.20477
+set_cur_cmd(mp_comma + 1);        /* anything |<>comma| will do */
+@y
+set_cur_cmd(mp_comma + 1);        /* anything |!=comma| will do */
 @z
 
 @x [32.804] l.20640
@@ -933,6 +963,18 @@ length of line~1. If $l+k>h$, some cropping is necessary, so we set |n=h|
 @<Find \9{a}and load preload file, if required@>=
 @z
 
+@x [35.863] l.21816
+where |loc<last| and |buffer[loc]<>""|.
+@y
+where |loc<last| and |buffer[loc]!=""|.
+@z
+
+@x [35.876] l.22018
+|job_name<>0|. It ignores and changes the current settings of |cur_area|
+@y
+|job_name!=0|. It ignores and changes the current settings of |cur_area|
+@z
+
 @x [35.886] l.22249
   @<Flush |name| and replace it with |cur_name| if it won't be needed@>;
 @y
@@ -974,6 +1016,11 @@ just before \MP\ calls the procedure |scan_expression|, if the expression should
 @y
 @<Declare the \9{b}basic parsing subroutines@>=
 @z
+@x [37.936] l.23767
+      if (cur_cmd() < mp_numeric_token) {  /* in particular, |cur_cmd<>plus_or_minus| */
+@y
+      if (cur_cmd() < mp_numeric_token) {  /* in particular, |cur_cmd!=plus_or_minus| */
+@z
 @x [37.936] l.23904
     @<Scan a variable primary; |goto restart| if it turns out to be a macro@>;
 @y
@@ -990,6 +1037,12 @@ just before \MP\ calls the procedure |scan_expression|, if the expression should
 @<Scan a variable primary...@>=
 @y
 @<Scan \9{a}a variable primary...@>=
+@z
+
+@x [37.943] l.24250
+subscripts evaluated. But if |post_head<>NULL|, the variable turned out
+@y
+subscripts evaluated. But if |post_head!=NULL|, the variable turned out
 @z
 
 @x [37.947] l.24447
@@ -1146,7 +1199,7 @@ and let |q| point to another value field. The |bilin1| procedure
 @x [41.1135] l.32386
       /* In this case |add_type<>also_code| so setting |p:=NULL| suppresses future
 @y
-      /* In this case |add_type<>also_code| so setting |p=NULL| suppresses future
+      /* In this case |add_type!=also_code| so setting |p=NULL| suppresses future
 @z
 
 @x [41.1137] l.32470
