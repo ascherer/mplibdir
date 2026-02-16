@@ -811,6 +811,12 @@ descriptive information on line~1, and set |n=l+k|; here |n| is the
 length of line~1. If $l+k>h$, some cropping is necessary, so we set |n=h|
 @z
 
+@x [28.710] l.18285
+@<Declare the procedure called |make_exp_copy|@>
+@y
+@<Declare the procedure called |make_exp_copy|@>@;
+@z
+
 @x [28.711] l.18323
 If |cur_sym<>0|, the values of |cur_cmd| and |cur_mod| are irrelevant.
 @y
@@ -993,6 +999,14 @@ where |loc<last| and |buffer[loc]!=""|.
 @ @<Set \9{i}init...@>=
 @z
 
+@x [36.912] l.22814
+@<Declare the procedure called |print_dp|@>
+@<Declare the stashing/unstashing routines@>
+@y
+@<Declare the procedure called |print_dp|@>@;
+@<Declare the stashing/unstashing routines@>@;
+@z
+
 @x [36.934] l.23487
 just before \MP\ calls |scan_expression|, if the expression should be
 @y
@@ -1045,6 +1059,12 @@ subscripts evaluated. But if |post_head<>NULL|, the variable turned out
 subscripts evaluated. But if |post_head!=NULL|, the variable turned out
 @z
 
+@x [37.944] l.24284
+@<Declare subroutines needed by |make_exp_copy|@>
+@y
+@<Declare subroutines needed by |make_exp_copy|@>@;
+@z
+
 @x [37.947] l.24447
 @<Declare the basic parsing subroutines@>=
 @y
@@ -1084,6 +1104,18 @@ subscripts evaluated. But if |post_head!=NULL|, the variable turned out
 @<Declare the basic parsing subroutines@>=
 @y
 @<Declare the \9{b}basic parsing subroutines@>=
+@z
+
+@x [39.961] l.25437
+@<Declare nullary action procedure@>
+@y
+@<Declare nullary action procedure@>@;
+@z
+
+@x [39.963] l.25542
+@<Declare unary action procedures@>
+@y
+@<Declare unary action procedures@>@;
 @z
 
 @x [39.991] l.27278
@@ -1189,6 +1221,12 @@ and let |q| point to another value field. The |bilin1| procedure
 @ @<Transform \9{k}known by known@>=
 @z
 
+@x [40.1040] l.29813
+@<Declare the procedure called |make_eq|@>
+@y
+@<Declare the procedure called |make_eq|@>@;
+@z
+
 @x [41.1135] l.32360
       /* Setting |p:=NULL| causes the $\langle$with list$\rangle$ to be ignored;
          setting |e:=NULL| prevents anything from being added to |lhe|. */
@@ -1200,6 +1238,12 @@ and let |q| point to another value field. The |bilin1| procedure
       /* In this case |add_type<>also_code| so setting |p:=NULL| suppresses future
 @y
       /* In this case |add_type!=also_code| so setting |p=NULL| suppresses future
+@z
+
+@x [41.1136] l.32458
+@<Declare the \ps\ output procedures@>
+@y
+@<Declare the \ps\ output procedures@>@;
 @z
 
 @x [41.1137] l.32470
@@ -1218,6 +1262,12 @@ and let |q| point to another value field. The |bilin1| procedure
 @ @<Set init...@>=
 @y
 @ @<Set \9{i}init...@>=
+@z
+
+@x [41.1143] l.32549
+@<Declare a procedure called |no_string_err|@>
+@y
+@<Declare a procedure called |no_string_err|@>@;
 @z
 
 @x [41.1149] l.32630
