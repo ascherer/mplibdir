@@ -136,13 +136,16 @@ wholesale.
 #include "mpmathbinary.h"| */       /* internal header */ @t@>
 /*|
 #include "mpmathinterval.h"| */       /* internal header */
-#include "mpstrings.h"          /* internal header */ @t@>
+#include "mpstrings.h"          /* internal header */
+#include "tfmin.h"              /* internal header */ @t@>
 @z
 
-@x [1.7] l.259
+@x [1.7] l.258
+@ @s font_number int @c
 extern font_number mp_read_font_info (MP mp, char *fname);      /* \.{tfmin.w} */
+@h
 @y
-#include "tfmin.h" /* |mp_read_font_info| */
+@ @c @h
 @z
 
 @x [1.8] l.267
