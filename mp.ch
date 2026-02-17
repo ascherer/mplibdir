@@ -231,6 +231,12 @@ returns |false| and sets |last=first|.  In general, the |ASCII_code|
 (in which case the line was entirely blank) or |buffer[last-1]!=" "|.
 @z
 
+@x [5.84] l.1589
+|k-0100| must be printable; moreover, ASCII codes |[060..071, 0141..0146]|
+@y
+|k-0100| must be printable; moreover, ASCII codes $[|060|..|071|, |0141|..|0146|]$
+@z
+
 @x [6.121] l.2103
 @s mp_sym int
 @y
@@ -1317,6 +1323,12 @@ by changing values if necessary. It also sets |indep_value(p)=k| if |value(p)|
   mp_tfm_warning (mp, mp_char_wd)
 @y
   mp_tfm_warning (mp, mp_char_wd)@;
+@z
+
+@x [43.1224] l.34370
+typedef unsigned int font_number;       /* |0..font_max| */
+@y
+typedef unsigned int font_number;       /* $0..|font_max|$ */
 @z
 
 @x [43.1230] l.34470
