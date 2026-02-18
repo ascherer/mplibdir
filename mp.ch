@@ -49,6 +49,12 @@
   \readindex}
 @z
 
+@x [1.1] l.1
+similar to D.E. Knuth's \MF, but with changes designed to make it
+@y
+similar to D. E. Knuth's \MF, but with changes designed to make it
+@z
+
 @x [1.3] l.91
 #include <stdlib.h>
 @y
