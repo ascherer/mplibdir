@@ -83,24 +83,6 @@ wholesale.
 /*\#define MPOST_DEBUG_ENVELOPE */
 @y
 @z
-@x [1.5] l.160
-#define dbg_str(A)	  @[printf("\n--[==[%03d MPOST_DEBUG_ENVELOPE ]==] %s",		   MPOST_DEBUG_ENVELOPECOUNTER++, #A)@]
-@y
-#define dbg_str(A)	  @[printf("\n--[==[%03d MPOST_DEBUG_ENVELOPE ]==] %s",	@|	   MPOST_DEBUG_ENVELOPECOUNTER++, #A)@]
-@z
-@x [1.5] l.169
-#define dbg_sp 		  @[printf("\n--[==[%03d MPOST_DEBUG_ENVELOPE ]==]  ",   	   MPOST_DEBUG_ENVELOPECOUNTER++)@]
-#define dbg_open_t 	  @[printf("\n--[==[%03d MPOST_DEBUG_ENVELOPE ]==] {",   	   MPOST_DEBUG_ENVELOPECOUNTER++)@]
-#define dbg_close_t 	  @[printf("\n--[==[%03d MPOST_DEBUG_ENVELOPE ]==] }",   	   MPOST_DEBUG_ENVELOPECOUNTER++)@]
-#define dbg_comma 	  @[printf("\n--[==[%03d MPOST_DEBUG_ENVELOPE ]==] ,",   	   MPOST_DEBUG_ENVELOPECOUNTER++)@]
-#define dbg_nl 		  @[printf("\n--[==[%03d MPOST_DEBUG_ENVELOPE ]==] \n",   	   MPOST_DEBUG_ENVELOPECOUNTER++)@]
-@y
-#define dbg_sp 		  @[printf("\n--[==[%03d MPOST_DEBUG_ENVELOPE ]==]  ", @|  	   MPOST_DEBUG_ENVELOPECOUNTER++)@]
-#define dbg_open_t 	  @[printf("\n--[==[%03d MPOST_DEBUG_ENVELOPE ]==] {", @|  	   MPOST_DEBUG_ENVELOPECOUNTER++)@]
-#define dbg_close_t 	  @[printf("\n--[==[%03d MPOST_DEBUG_ENVELOPE ]==] }", @|  	   MPOST_DEBUG_ENVELOPECOUNTER++)@]
-#define dbg_comma 	  @[printf("\n--[==[%03d MPOST_DEBUG_ENVELOPE ]==] ,", @|  	   MPOST_DEBUG_ENVELOPECOUNTER++)@]
-#define dbg_nl 		  @[printf("\n--[==[%03d MPOST_DEBUG_ENVELOPE ]==] \n", @|  	   MPOST_DEBUG_ENVELOPECOUNTER++)@]
-@z
 
 @x [1.5] l.193
 #include <png.h>                /* for |PNG_LIBPNG_VER_STRING|, |png_libpng_ver| */
