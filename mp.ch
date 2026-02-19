@@ -49,7 +49,7 @@
   \readindex}
 @z
 
-@x [1.1] l.1
+@x [1.1] l.35
 similar to D.E. Knuth's \MF, but with changes designed to make it
 @y
 similar to D. E. Knuth's \MF, but with changes designed to make it
