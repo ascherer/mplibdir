@@ -46,6 +46,12 @@ const char * const COMPILED_gmp_version  = MP_STR(__GNU_MP_VERSION) "."@|
   MP_STR(__GNU_MP_VERSION_PATCHLEVEL);
 @z
 
+@x [3] l.55
+@<Internal library declarations@>
+@y
+@<Internal library declarations@>@;
+@z
+
 @x [10] l.264
   /*mpfr_clears (one, minusone, zero, two_mpfr_t, three_mpfr_t, four_mpfr_t, fraction_multiplier_mpfr_t,*/
   /*            fraction_one_mpfr_t, fraction_one_plus_mpfr_t,  angle_multiplier_mpfr_t, PI_mpfr_t, */
