@@ -124,9 +124,8 @@ wholesale.
 #include <gmp.h>| */                /* for |gmp_version| */ @t@>
 /*|
 #include <mpfr.h>| */               /* for |MPFR_VERSION_STRING|, |mpfr_get_version()| */
-#include "mplibps.h"            /* external header */ @t@>
-/*|
-#include "mplibsvg.h"| */          /* external header */ @t@>
+#include "mplibps.h"            /* external header */
+#include "mplibsvg.h"           /* external header */ @t@>
 /*|
 #include "mplibpng.h"| */          /* external header */
 #include "mpmp.h"               /* internal header */
