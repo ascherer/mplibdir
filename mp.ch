@@ -130,9 +130,8 @@ wholesale.
 /*|
 #include "mplibpng.h"| */          /* external header */
 #include "mpmp.h"               /* internal header */
-#include "mppsout.h"            /* internal header */ @t@>
-/*|
-#include "mpsvgout.h"| */           /* internal header */ @t@>
+#include "mppsout.h"            /* internal header */
+#include "mpsvgout.h"           /* internal header */ @t@>
 /*|
 #include "mppngout.h"| */           /* internal header */
 #include "mpmath.h"             /* internal header */
@@ -144,6 +143,14 @@ wholesale.
 #include "mpmathinterval.h"| */       /* internal header */
 #include "mpstrings.h"          /* internal header */
 #include "tfmin.h"              /* internal header */ @t@>
+@z
+
+@x [1.6] l.253
+extern void mp_svg_backend_initialize (MP mp);
+extern void mp_svg_backend_free (MP mp);
+extern int mp_svg_ship_out (mp_edge_object  *hh, int prologues);
+extern int mp_svg_gr_ship_out (mp_edge_object  *hh, int prologues, int standalone);
+@y
 @z
 
 @x [1.7] l.258
