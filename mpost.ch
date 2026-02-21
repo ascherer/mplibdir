@@ -5,6 +5,7 @@
 \ifpdf \sanitizecommand\MP{MetaPost} \fi
 
 @s tm int
+@s integer64 int
 @z
 
 @x [2] l.52
@@ -19,12 +20,6 @@
 @= /*@@null@@*/ @> @;@+ static char *mpost_tex_program = NULL;
 @z
 
-@x [3] l.71
-@ Allocating a bit of memory, with error detection:
-@y
-@ Allocating a bit of memory, with error detection:
-@s integer64 int
-@z
 @x [3] l.73
 @d mpost_xfree(A) do { if (A!=NULL) free(A); A=NULL; } while (0)
 @y

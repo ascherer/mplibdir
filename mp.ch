@@ -47,6 +47,15 @@
   \rm \rightskip0pt plus 2.5em \tolerance 10000
   \hyphenpenalty 10000 \parindent0pt
   \readindex}
+
+@s uint16_t int
+@s uint32_t int
+@s integer64 int
+@s mpinteger64 int
+@s eight_bits int
+@s QUARTERWORD int
+@s quarterword int
+@s halfword int
 @z
 
 @x [1.1] l.35
@@ -58,17 +67,6 @@ similar to D. E. Knuth's \MF, but with changes designed to make it
 @x [1.3] l.91
 #include <stdlib.h>
 @y
-@z
-
-@x [1.4] l.111
-wholesale.
-@y
-wholesale.
-@s integer64 int
-@s mpinteger64 int
-@s QUARTERWORD int
-@s quarterword int
-@s halfword int
 @z
 
 @x [1.4] l.132
@@ -224,13 +222,6 @@ log file is already closed), but that is not so important while debugging.
 @<Set \9{i}initial ...@>=
 @z
 
-@x [3.45] l.974
-the fopen mode is passed along for the same reason.
-@y
-the fopen mode is passed along for the same reason.
-@s eight_bits int
-@z
-
 @x [3.70] l.1282
 returns |false| and sets |last:=first|.  In general, the |ASCII_code|
 @y
@@ -249,13 +240,6 @@ returns |false| and sets |last=first|.  In general, the |ASCII_code|
 |k-0100| must be printable; moreover, ASCII codes $[|060|..|071|, |0141|..|0146|]$
 @z
 
-@x [6.121] l.2103
-@s mp_sym int
-@y
-@s mp_sym int
-@s uint16_t int
-@s uint32_t int
-@z
 @x [6.121] l.2108
   //uint32_t s1;
 @y
